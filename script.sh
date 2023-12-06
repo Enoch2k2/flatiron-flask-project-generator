@@ -47,6 +47,11 @@ echo "from config import app\n" >> server/app.py
 echo "if __name__ == \"__main__\":" >> server/app.py
 echo "  app.run(port=5555, debug=True)" >> server/app.py
 
+cd server
+
+pipenv run flask db init
+pipenv run flask db revision -m 'initial db'
+pipenv run flask db upgrade head
 
 # enter into the pipenv shell (currently stops the script until you exit from the pipenv shell)
 pipenv shell

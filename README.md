@@ -12,10 +12,7 @@ This script is for generating a barebone phase 4 project that's already configur
 
 ### What now that it's done running?
 
-You're currently in your pipenv shell. You will want to:
-* cd server
-* run `flask db init`, `flask db revision -m 'initial db'`, `flask db upgrade head`
-* now that your database is setup, the rest is up to you!
+You're Flask project is ready to go! Create models / routes / etc... You will not have to worry about initializing your database with flask db init, flask db revision -m 'initial db', flask db upgrade head. That is already done for you!
 
 ### If you run into issue with flask-bcrypt installing because of a rust issue
 
