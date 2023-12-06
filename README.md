@@ -14,6 +14,10 @@ This script is for generating a barebone phase 4 project that's already configur
 
 You're Flask project is ready to go! Create models / routes / etc... You will not have to worry about initializing your database with flask db init, flask db revision -m 'initial db', flask db upgrade head. That is already done for you!
 
+You also now have a client folder which is your React application. You can definitely use it if you want (if it this is your project, you will want to use this).
+
+You will need to go to `package.json` in your client folder and above the `"scripts"` option, you will need to add: `"proxy": "http:127.0.0.1:5555",`.
+
 ### If you run into issue with flask-bcrypt installing because of a rust issue
 
 Run this command:

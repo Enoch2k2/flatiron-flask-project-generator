@@ -53,5 +53,12 @@ pipenv run flask db init
 pipenv run flask db revision -m 'initial db'
 pipenv run flask db upgrade head
 
+cd ..
+
+npm create vite@latest client -- --template react
+cd client
+npm install react-router-dom formik yup
+cd ..
+
 # enter into the pipenv shell (currently stops the script until you exit from the pipenv shell)
 pipenv shell
