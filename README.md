@@ -7,7 +7,7 @@ This script is for generating a barebone phase 4 project that's already configur
 * In the root of your project, create a script.sh file.
 * Then copy the contents of this script.sh into your script.sh file in your project.
 * in the terminal type `chmod 777 script.sh` in order to give it executable permissions.
-* Type in the terminal `./script.sh secret_key` where you replace `secret_key` with a top secret key!
+* Type in the terminal `./script.sh` to run the file.
 * Grab some popcorn
 
 ### What now that it's done running?
