@@ -11,6 +11,7 @@ pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-cors flask-res
 mkdir server
 touch server/app.py
 touch server/config.py
+touch server/seed.py
 touch .env
 touch .gitignore
 
@@ -52,6 +53,13 @@ echo -e "from config import app\n" >> server/app.py
 # configuring app.py
 echo "if __name__ == \"__main__\":" >> server/app.py
 echo "  app.run(port=5555, debug=True)" >> server/app.py
+
+# configuring seed.py
+echo -e "from config import app, db\n" >> server/seed.py
+echo "if __name__ == \"__main__\":" >> server/seed.py
+echo "  with app.app_context():" >> server/seed.py
+echo "    pass" >> server/seed.py
+echo "    # remove pass and write your seed data" >> server/seed.py
 
 # configuring .gitignore
 echo ".env" >> .gitignore
