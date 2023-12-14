@@ -19,9 +19,12 @@ You also now have a client folder which is your React application. You can defin
 You will need to go to `vite.config.js` in your client folder and inside the `defineConfig` under the `plugins: [react()],` line, you will need to add:
 
 ```
-proxy: {
+server: {
+  proxy: {
       '/api': 'http://localhost:5555'
-    },
+  },
+}
+
 ```
 
 This will mean anytime you do a fetch with `/api` at the start, it will proxy to `http://localhost:5555`. Example:
