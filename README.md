@@ -6,7 +6,10 @@ This script is for generating a barebone phase 4 project that's already configur
 
 * Create a directory for your project and cd into your project
 * open up the terminal in your project directory (make sure your terminal shows the project directory)
-* run in the terminal `curl -s https://raw.githubusercontent.com/Enoch2k2/flatiron-flask-project-generator/main/script.sh | bash`
+* run in the terminal:
+```
+ curl -s https://raw.githubusercontent.com/Enoch2k2/flatiron-flask-project-generator/main/script.sh | bash
+```
 * Grab some popcorn
 
 ### Note while the project is being created
