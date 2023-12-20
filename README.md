@@ -30,4 +30,4 @@ Run this command:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-Then delete everything in your folder except the script.sh. Type exit in your terminal to make sure you are out of your pipenv shell and then re-run the script.sh.
+Then delete everything in your folder except the script.sh and then re-run the script.sh.
