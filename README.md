@@ -2,6 +2,23 @@
 
 This script is for generating a barebone phase 4 project that's already configured for Flask with a React frontend.
 
+### The project generator will:
+* Create your pipenv virtual environment
+* Create and configure a barebone flask application
+* Install all needed packages for your flask application
+* Initializes your sqlalchemy database, so no need to flask db init or create your base revision
+* Create a React application with Vite
+* Install all needed base packages (react router dom, formik, yup) for your react application
+* Configure your React's proxy
+* Create a README
+* Make your initial commit for you
+ 
+### The project generator will not:
+* Connect your project to github, you will still need to create a new repository in github
+* Fill out your README.md for you, you will still need to fill this out
+* Add any additional packages you want to add for both React or Flask. You will do those as normal
+* Automatically put you into your pipenv shell, you will need to run that command in order to be in your virtual environment
+
 ### How to use
 
 * Create a directory for your project and cd into your project
