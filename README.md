@@ -4,10 +4,9 @@ This script is for generating a barebone phase 4 project that's already configur
 
 ### How to use
 
-* In the root of your project, create a script.sh file.
-* Then copy the contents of this script.sh into your script.sh file in your project.
-* in the terminal type `chmod 777 script.sh` in order to give it executable permissions.
-* Type in the terminal `./script.sh` to run the file.
+* Create a directory for your project and cd into your project
+* open up the terminal in your project directory (make sure your terminal shows the project directory)
+* run in the terminal `curl -s https://raw.githubusercontent.com/Enoch2k2/flatiron-flask-project-generator/main/script.sh | bash`
 * Grab some popcorn
 
 ### Note while the project is being created
@@ -30,4 +29,4 @@ Run this command:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-Then delete everything in your folder except the script.sh and then re-run the script.sh.
+Then delete everything in your folder and run `rm -rf .git`. Then redo the installation instructions!

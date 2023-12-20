@@ -111,7 +111,4 @@ echo "Fill out your project details here in your README.md" >> README.md
 
 git init
 git add .
-git restore –staged script.sh
 git commit -m 'initial commit'
-
-rm script.sh
