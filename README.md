@@ -16,28 +16,8 @@ You're Flask project is ready to go! Create models / routes / etc... You will no
 
 You also now have a client folder which is your React application. You can definitely use it if you want (if it this is your project, you will want to use this). This includes react-router-dom, formik, and yup automatic installations.
 
-You will need to go to `vite.config.js` in your client folder and inside the `defineConfig` under the `plugins: [react()],` line, you will need to add:
-
-```
-server: {
-  '/api': {
-        target: 'http://localhost:5555',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-}
-
-```
-
-This will mean anytime you do a fetch with `/api` at the start, it will proxy to `http://localhost:5555`. Example:
-
-```
-fetch('/api/check_session')
-```
-
-The /api will trigger the proxy and will send the request to `http://localhost:5555/check_session`. If your backend prefixes /api to all of your routes and you need to go to `http://localhost:5555/api/check_session` you can remove the `rewrite` line which removes the `/api` from the route.
-
-Note: Hoping to get this automated in the future. Just not there yet.
+### Note on the proxy in client/vite.config.js ###
+If your backend prefixes `/api` to all of your routes, for example: `http://localhost:5555/api/check_session` and you have `api.add_resource(CheckSession, "/api/check_session")`, you can remove the `rewrite` line which removes the `/api` from the route so you can use `/api` in your backend routes.
 
 ### If you run into issue with flask-bcrypt installing because of a rust issue
 

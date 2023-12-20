@@ -81,4 +81,25 @@ cd ..
 npm create vite@latest client -- --template react
 cd client
 npm install react-router-dom formik yup
+
+# clear out vite configuration by removing file and re-adding
+rm vite.config.js
+touch vite.config.js
+
+# add new vite configuration
+
+echo "import { defineConfig } from 'vite'" >> vite.config.js
+echo -e "import react from '@vitejs/plugin-react'\n" >> vite.config.js
+echo "// https://vitejs.dev/config/" >> vite.config.js
+echo "export default defineConfig({" >> vite.config.js
+echo "  plugins: [react()]," >> vite.config.js
+echo "  server: {" >> vite.config.js
+echo "    '/api': {" >> vite.config.js
+echo "      target: 'http://localhost:5555'," >> vite.config.js
+echo "      changeOrigin: true," >> vite.config.js
+echo "      rewrite: (path) => path.replace(/^\/api/, '')," >> vite.config.js
+echo "    }," >> vite.config.js
+echo "  }" >> vite.config.js
+echo "})" >> vite.config.js
+
 cd ..
