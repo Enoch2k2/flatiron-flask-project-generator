@@ -16,7 +16,7 @@ This script is for generating a barebone phase 4 project that's already configur
 ### The project generator will not:
 * Connect your project to github, you will still need to create a new repository in github
 * Fill out your README.md for you, you will still need to fill this out
-* Add any additional packages you want to add for both React or Flask. You will do those as normal
+* Add any additional packages you want to add for both React or Flask. You will do that as normal
 * Automatically put you into your pipenv shell, you will need to run that command in order to be in your virtual environment
 
 ### How to use
