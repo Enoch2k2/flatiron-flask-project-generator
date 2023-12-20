@@ -5,6 +5,12 @@ secret_key=`hexdump -vn16 -e'4/4 "%08X" 1 "\n"' /dev/urandom`
 
 # setup virtual environment and add dependencies
 pipenv install --python 3.9.2
+
+# Set virtual environments for WSL compatiblility
+PIPENV_IGNORE_VIRTUALENVS=1
+PIPENV_VERBOSITY=-1
+
+# install python packages
 pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-cors flask-restful flask-migrate flask-bcrypt python-dotenv
 
 # filestructures
