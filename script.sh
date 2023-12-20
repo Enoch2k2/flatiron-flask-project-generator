@@ -103,3 +103,15 @@ echo "  }" >> vite.config.js
 echo "})" >> vite.config.js
 
 cd ..
+
+touch README.md
+
+echo "# Project Name Here" >> README.md
+echo "Fill out your project details here in your README.md" >> README.md
+
+git init
+git add .
+git restore –staged script.sh
+git commit -m 'initial commit'
+
+rm script.sh
