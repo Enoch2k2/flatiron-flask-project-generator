@@ -1,6 +1,6 @@
 # Simple Flask Project Generator for Flatiron School
 
-This script is for generating a barebone phase 4 project that's already configured for Flask. React you will still need to add (possibly adding this later).
+This script is for generating a barebone phase 4 project that's already configured for Flask with a React frontend.
 
 ### How to use
 
