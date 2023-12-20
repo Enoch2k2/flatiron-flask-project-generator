@@ -10,6 +10,10 @@ This script is for generating a barebone phase 4 project that's already configur
 * Type in the terminal `./script.sh` to run the file.
 * Grab some popcorn
 
+### Note while the project is being created
+
+There may be points during project generation that you get prompted to input either a yes or no into the terminal. Or to install something (like vite). Follow the prompts closely (basically say yes to everything and it should be fine!). You will only need to do the prompts once.
+
 ### What now that it's done running?
 
 You're Flask project is ready to go! Create models / routes / etc... You will not have to worry about initializing your database with flask db init, flask db revision -m 'initial db', flask db upgrade head. That is already done for you!
