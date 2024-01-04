@@ -42,6 +42,8 @@ You also now have a client folder which is your React application. You can defin
 `npm run dev` To run the react server
 
 ### Note on the proxy in client/vite.config.js ###
+You will need to add `/api` in front of all the `fetch` requests in order for the `proxy` to kick in, which is needed for authentication (cookies to be transmitted).
+
 If your backend prefixes `/api` to all of your routes, for example: `http://localhost:5555/api/check_session` and you have `api.add_resource(CheckSession, "/api/check_session")`, you can remove the `rewrite` line which removes the `/api` from the route so you can use `/api` in your backend routes.
 
 ### If you run into issue with flask-bcrypt installing because of a rust issue
