@@ -7,7 +7,7 @@ secret_key=`hexdump -vn16 -e'4/4 "%08X" 1 "\n"' /dev/urandom`
 pipenv install --python 3.9.2
 
 # install python packages
-pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-cors flask-restful flask-migrate flask-bcrypt python-dotenv
+pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-cors flask-restful flask-migrate flask-bcrypt python-dotenv gunicorn psycopg2
 
 # filestructures
 mkdir server
@@ -82,7 +82,7 @@ cd ..
 # creating react client
 npm create vite@latest client -- --template react
 cd client
-npm install react-router-dom formik yup
+npm install react-router-dom@6.29.0 formik yup
 
 # clear out vite configuration by removing file and re-adding
 rm vite.config.js
@@ -112,6 +112,8 @@ touch README.md
 
 echo "# Project Name Here" >> README.md
 echo "Fill out your project details here in your README.md" >> README.md
+
+pipenv requirements > requirements.txt
 
 git init
 git add .
