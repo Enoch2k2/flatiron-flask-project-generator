@@ -98,7 +98,7 @@ echo "  plugins: [react()]," >> vite.config.js
 echo "  server: {" >> vite.config.js
 echo "   proxy: {" >> vite.config.js
 echo "    '/api': {" >> vite.config.js
-echo "      target: 'http://localhost:5555'," >> vite.config.js
+echo "      target: 'http://127.0.0.1:5555'," >> vite.config.js
 echo "      changeOrigin: true," >> vite.config.js
 echo "      rewrite: (path) => path.replace(/^\/api/, '')," >> vite.config.js
 echo "    }," >> vite.config.js
