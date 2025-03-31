@@ -7,7 +7,7 @@ secret_key=`hexdump -vn16 -e'4/4 "%08X" 1 "\n"' /dev/urandom`
 pipenv install --python 3.9.2
 
 # install python packages
-pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-cors flask-restful flask-migrate flask-bcrypt python-dotenv gunicorn psycopg2
+pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-cors flask-restful flask-migrate flask-bcrypt python-dotenv gunicorn psycopg2-binary
 
 # filestructures
 mkdir server
