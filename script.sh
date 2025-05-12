@@ -4,7 +4,7 @@
 secret_key=`hexdump -vn16 -e'4/4 "%08X" 1 "\n"' /dev/urandom`
 
 # setup virtual environment and add dependencies
-pipenv install --python 3.9.2
+pipenv install --python 3.8.13
 
 # install python packages
 pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-cors flask-restful flask-migrate flask-bcrypt python-dotenv gunicorn psycopg2-binary
